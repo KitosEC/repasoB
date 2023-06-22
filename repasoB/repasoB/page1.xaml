@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repasoB.page1" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana 1" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="https://assets.stickpng.com/images/580b57fbd9996e24bc43bdef.png"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Contrasena" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"></Button>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese contrasena" Grid.Row="1" Grid.Column="1"></Entry>
+                <ImageButton Source="cancelar.png" HorizontalOptions="Center" VerticalOptions="Center" Clicked="ImageButton_Clicked" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

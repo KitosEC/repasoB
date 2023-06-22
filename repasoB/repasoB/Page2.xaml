@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repasoB.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblusuario" HorizontalTextAlignment="End" FontSize="10" TextColor="Red"/>
+            <Label Text="ventana2" HorizontalTextAlignment="Center" FontSize="29"/>
+            <Entry x:Name="txtDato" Placeholder="Dato" Keyboard="Numeric" TextChanged="txtDato_TextChanged"/>
+            <Picker Title="Estudiamtes" x:Name="pkEstudiantes">
+                <Picker.Items>
+                    <x:String>Carlos</x:String>
+                    <x:String>Jose</x:String>
+                    <x:String>Maria</x:String>
+                    <x:String>Sandro</x:String>
+                </Picker.Items>
+                
+            </Picker>
+            <Button x:Name="btnAbrir" Text="Abrir" Clicked="btnAbrir_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
